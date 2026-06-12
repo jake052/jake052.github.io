@@ -1,36 +1,40 @@
 ---
 title: "People Helping People"
-date: 2026-06-04
+date: 2026-06-12
 slug: "people-helping-people"
-description: "A data fusion framework for linking fragmented social care records into a single, coherent picture of one person's support."
-image: "/images/people-helping-people.jpg"
+description: "A data fusion layer for social care — turning the fragments scattered across notes, records, and conversations into a single, living picture of one person."
 featured: true
+status: "In progress"
 weight: 1
 draft: false
 ---
 
-## The problem
+*The venture · In active development*
 
-Social care in the UK runs on fragmented systems. A single person receiving support might have records spread across their GP, local authority, a housing provider, one or two charities, and a mental health team — none of which talk to each other.
+Think about your own support plan — the document someone would have to write if a stranger had to support you tomorrow. How you communicate. The shifts in your tone when you're tired. Your morning routine, in order, including the small stuff that makes you, you.
 
-The result is that nobody has the full picture. Care plans are written from partial information. Risk assessments miss context that exists somewhere else in the system. Support workers — I was one — make decisions based on whatever fragment of a person's story happens to be in front of them.
+It's really hard to write down. And in social care, nobody is ever working from the full version. A person's reality is scattered across daily notes, risk assessments, incident reports, a support plan written eighteen months ago, and something a family member said last Tuesday. Each fragment sits in a different place. Nobody joins them up — and the person in the middle, who often can't fill that gap themselves, is the one who pays for it.
 
-This isn't a technology problem, exactly. It's a data architecture problem wrapped in a governance problem wrapped in decades of underfunding. But the data architecture part is the bit I can actually work on.
+I spent eight years inside this problem — as a support worker, then managing supported living services. It's also personal: my brother Ollie is supported by this system. For people like him, the difference between fragmented data and fused understanding is the difference between reactive support and care that actually knows who he is.
 
-## The approach
+## The idea
 
-People Helping People is a data fusion framework — a way to link records about the same person across multiple care systems into a single, coherent view.
+Military intelligence solved this problem decades ago. Satellites, drones, ground patrols — each one a fragment, individually just noise. Fused together, they become a common operating picture: one living model of what's actually happening. Hall and Llinas called it data fusion, and it's now standard in defence, autonomous vehicles, and fraud detection.
 
-The core challenge is entity resolution: when System A says "Jane Smith, 42, Truro" and System B says "J. Smith, DOB 1984, TR1 2AB", how do you determine whether they're the same person — and do it reliably enough that clinicians will trust the output?
+Nobody has applied it to social care. People Helping People is that layer: every source feeding one structured, continuously updated model of the person — same person, same data, different lens for the support worker planning a shift, the social worker reviewing care, the family member wanting to know how this week went.
 
-The project explores probabilistic record linkage using a combination of deterministic matching (exact matches on NHS number where available), fuzzy matching (name similarity, address normalisation), and a scoring model that weights different identifiers by their discriminative power.
+Under the hood, that means confidence weighting (how sure are we about each data point, and does newer evidence outweigh older?), an event-driven design that reacts when new information arrives rather than waiting for a review date, language models that work with meaning rather than keywords, and agentic loops that can notice a contradiction and ask a human to resolve it rather than guessing.
 
-*[More technical detail to be added as the dissertation develops.]*
+## Why nobody's building it
 
-## What I'm learning
+Adult social care in England spends around £30bn a year. Eighty per cent of providers are now on digital records — the data is being captured. But every care-tech competitor is fighting over the output layer: better forms, nicer dashboards, prettier documents. Of the twenty-seven council technology strategies I analysed, only five even mention AI.
 
-The technical work is the easy part. The hard part is everything around it: data governance frameworks that were designed to prevent exactly this kind of linking, organisational cultures that treat data sharing as a risk rather than a responsibility, and the fundamental tension between privacy protection and care coordination.
+The layer underneath — the data architecture that would make every output better — is empty. Kim and Mauborgne would call it a blue ocean. I'd put it more simply: I'm not avoiding competition, I'm competing on a different axis.
 
-I'm also learning that the people who understand this problem best — frontline care workers — are almost never consulted when data systems are designed. The people who design the systems have never tried to write a care plan from three contradictory assessments.
+## Where it actually is
 
-*This page will be updated as the project progresses.*
+Honestly: architectural design and MVP prototyping. The [social story builder](/projects/social-story-builder/) proved the output layer was crowded; the [care plan update system](/projects/care-plan-update-system/) proved fusion produces a better picture than any single source — and is the first working piece of the platform. Every MVP cycle tests the core hypothesis on synthetic data before any real record goes near it.
+
+The open questions are real too. Will anyone pay, and how much? And the one that matters most: this is AI mediating the voice of people who often can't verify what's written about them. Decisions get made on this data. Building the ethics in — co-produced with the people the system describes — isn't a compliance step. It's the product.
+
+{{< annotation >}}Every person deserves to be known by the people who support them.{{< /annotation >}}
