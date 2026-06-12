@@ -19,7 +19,7 @@
       </a>
       <div class="project-other-content">
         <h3><a href="{{ .RelPermalink }}">{{ $title }}</a></h3>
-        {{ with .Params.status }}<div class="project-status">{{ . }}</div>{{ end }}
+        {{ with .Params.status }}<div class="project-status status-{{ . | urlize }}">{{ . }}</div>{{ end }}
         <p>{{ .Description }}</p>
         <a href="{{ .RelPermalink }}" class="read-more">Read more →</a>
       </div>

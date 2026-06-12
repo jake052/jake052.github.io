@@ -529,11 +529,25 @@ figure figcaption a:hover {
 
 .project-status {
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: var(--text-faint);
   margin-bottom: 0.8rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
+.project-status::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-ghost);
+  margin-right: 0.45rem;
+  vertical-align: 1px;
+  transition: background 0.4s ease;
+}
+.status-in-progress { color: var(--accent); }
+.status-in-progress::before { background: var(--accent); }
 
 .project-featured > p { color: var(--text-dim); }
 

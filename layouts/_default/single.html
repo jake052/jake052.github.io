@@ -14,7 +14,7 @@
       {{ .Date.Format "2 January 2006" }}
       {{ with .Params.readingtime }} · {{ . }} min read{{ end }}
     {{ else if eq .Section "projects" }}
-      {{ with .Params.status }}{{ . }}{{ end }}
+      {{ with .Params.status }}<span class="project-status status-{{ . | urlize }}">{{ . }}</span>{{ end }}
     {{ end }}
   </div>
   {{ end }}
