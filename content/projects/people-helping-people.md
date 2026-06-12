@@ -5,6 +5,7 @@ slug: "people-helping-people"
 description: "A data fusion layer for social care — turning the fragments scattered across notes, records, and conversations into a single, living picture of one person."
 featured: true
 status: "In progress"
+image: "/images/projects/php-living-plan.png"
 weight: 1
 draft: false
 ---
@@ -34,6 +35,8 @@ The layer underneath — the data architecture that would make every output bett
 ## Where it actually is
 
 Honestly: architectural design and MVP prototyping. The [social story builder](/projects/social-story-builder/) proved the output layer was crowded; the [care plan update system](/projects/care-plan-update-system/) proved fusion produces a better picture than any single source — and is the first working piece of the platform. Every MVP cycle tests the core hypothesis on synthetic data before any real record goes near it.
+
+{{< figure src="/images/projects/php-living-plan.png" alt="The PHP prototype refreshing a care plan marked stale at 14 months, reading every shift note written since" caption="A plan that was 14 months stale, refreshed from every note written since" >}}
 
 The open questions are real too. Will anyone pay, and how much? And the one that matters most: this is AI mediating the voice of people who often can't verify what's written about them. Decisions get made on this data. Building the ethics in — co-produced with the people the system describes — isn't a compliance step. It's the product.
 

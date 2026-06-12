@@ -4,6 +4,7 @@ date: 2026-06-12
 slug: "ai-as-reflective-tool"
 description: "Using an AI interviewer to interrogate my own leadership — what structured, non-judgmental pushback surfaced that years of informal reflection hadn't."
 status: "Complete"
+image: "/images/projects/reflective-gauge.png"
 weight: 5
 draft: false
 ---
@@ -11,6 +12,8 @@ draft: false
 *A documented practice · Leadership research, 2026*
 
 Most people use AI to produce things. I wanted to know what happens when you use it to interrogate yourself.
+
+{{< figure src="/images/projects/reflective-gauge.png" alt="A hand-drawn gauge with the needle between outcome-dominant and relationally attentive leadership" caption="The dial I was trying to read." >}}
 
 For a leadership research project, I put five real episodes from my own management history — two from retail, three from social care — through structured reflective interviews. The interviewer was an AI, given a strict brief: work through Gibbs' reflective cycle stage by stage, never evaluate, never praise, never reassure, and refuse to accept surface-level answers. Spoken interviews, not written — talking is harder to edit than typing, and the unguarded version is the useful one. The AI's only job was to ask the next question that pushed my thinking further.
 

@@ -4,6 +4,7 @@ date: 2026-03-15
 slug: "social-story-builder"
 description: "An AI tool that turns structured personal data into bespoke social stories in minutes — and the market test that changed what I was building."
 status: "Complete"
+image: "/images/projects/social-story-builder.png"
 weight: 2
 draft: false
 ---
@@ -16,7 +17,9 @@ My first hypothesis was that this was the problem: the *outputs* of care are bad
 
 ## What I built
 
-A working generator: structured personal data in — how someone communicates, what they need to prepare for, what matters to them — and a bespoke social story out, in minutes instead of hours. Not a mock-up. It does what it's supposed to do.
+A working generator: structured personal data in — how someone communicates, what they need to prepare for, what matters to them — and a bespoke social story out, in minutes instead of hours. Not a mock-up. It does what it's supposed to do — you can [try it yourself](https://stories.peoplehelpingpeople.co.uk).
+
+{{< figure src="/images/projects/social-story-builder.png" alt="The Social Story Builder generating a four-panel first draft of a story about visiting the hairdresser" caption="The first draft, written for you — live at stories.peoplehelpingpeople.co.uk" >}}
 
 ## What the market said
 

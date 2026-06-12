@@ -4,6 +4,7 @@ date: 2026-05-01
 slug: "care-plan-update-system"
 description: "An agentic prototype that reads daily care notes, spots what's changed, and proposes care plan updates with an evidence trail — the second PHP hypothesis."
 status: "Complete"
+image: "/images/projects/care-plan-evidence.png"
 weight: 3
 draft: false
 ---
@@ -22,7 +23,9 @@ This isn't carelessness. There's simply no mechanism to keep a plan alive — so
 
 An agentic system that does the joining up. It reads daily care notes against the existing support plan, identifies meaningful changes — what worked, what didn't, what contradicts the plan as written — and proposes updates, each with an evidence trail back to the notes that justify it.
 
-The manager stays in control. They review each suggestion, accept or reject it, and the plan ends up reflecting the person as they are now, not as they were eighteen months ago. Nothing changes without a human deciding it should. It's a working prototype, tested on synthetic data — no real service users' records.
+The manager stays in control. They review each suggestion, accept or reject it, and the plan ends up reflecting the person as they are now, not as they were eighteen months ago. Nothing changes without a human deciding it should. It's a working prototype, tested on synthetic data — no real service users' records — and you can [see it working](https://careplan.peoplehelpingpeople.co.uk).
+
+{{< figure src="/images/projects/care-plan-evidence.png" alt="A care plan in the prototype where clicking any citation reveals the daily note that justifies the change" caption="Every change carries its evidence — live at careplan.peoplehelpingpeople.co.uk" >}}
 
 ## Why it mattered
 
