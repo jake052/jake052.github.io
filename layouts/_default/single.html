@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="single-content">
+  {{ if eq .Section "blog" }}
+  <a href="/blog/" class="back-link">← back to writing</a>
+  {{ else if eq .Section "projects" }}
+  <a href="/projects/" class="back-link">← back to projects</a>
+  {{ end }}
+
+  <h1 class="animate animate-d1">{{ .Title }}</h1>
+
+  {{ if or (eq .Section "blog") (eq .Section "projects") }}
+  <div class="single-meta animate animate-d2">
+    {{ if eq .Section "blog" }}
+      {{ .Date.Format "2 January 2006" }}
+      {{ with .Params.readingtime }} · {{ . }} min read{{ end }}
+    {{ else if eq .Section "projects" }}
+      {{ with .Params.status }}{{ . }}{{ end }}
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="prose animate animate-d3">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

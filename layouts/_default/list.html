@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="single-content">
+  <h2 class="page-heading animate animate-d1">{{ .Title }}</h2>
+  {{ with .Description }}
+  <p class="page-intro animate animate-d2">{{ . }}</p>
+  {{ end }}
+
+  {{ if eq .Section "projects" }}
+    {{/* All projects, featured first */}}
+    {{ range .Pages.ByParam "weight" }}
+    {{ $title := .Title }}
+    <div class="project-other animate animate-d3">
+      <a href="{{ .RelPermalink }}" class="project-thumb-link">
+        {{ with .Params.image }}
+        <img class="project-thumb" src="{{ . }}" alt="{{ $title }}">
+        {{ else }}
+        <div class="project-thumb-placeholder"></div>
+        {{ end }}
+      </a>
+      <div class="project-other-content">
+        <h3><a href="{{ .RelPermalink }}">{{ $title }}</a></h3>
+        {{ with .Params.status }}<div class="project-status">{{ . }}</div>{{ end }}
+        <p>{{ .Description }}</p>
+        <a href="{{ .RelPermalink }}" class="read-more">Read more →</a>
+      </div>
+    </div>
+    {{ end }}
+
+  {{ else if eq .Section "blog" }}
+    {{ range .Pages.ByDate.Reverse }}
+    <div class="blog-entry animate animate-d3">
+      <div class="blog-date">{{ .Date.Format "2 January 2006" }}</div>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Description }}</p>
+    </div>
+    {{ end }}
+
+    {{ if not .Pages }}
+    <p class="page-intro" style="margin-top: 2rem; font-style: italic;">Nothing here yet. Check back soon — or don't, I'm not your manager.</p>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

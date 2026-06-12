@@ -1,0 +1,18 @@
+baseURL = "https://jakebuck.com"
+languageCode = "en-gb"
+title = "Jake Buck"
+
+[params]
+  description = "I work on the problem of turning fragmented care data into decisions that actually help people."
+  author = "Jake Buck"
+  email = "hello@jakebuck.com"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  style = "github"
+
+[permalinks]
+  blog = "/blog/:slug/"
+  projects = "/projects/:slug/"
