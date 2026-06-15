@@ -9,7 +9,7 @@ description: "Get in touch."
 
 The best way to reach me is by email. I read everything and reply to most things — though if you're selling SEO services, I will silently judge you.
 
-<a href="mailto:hello@jakebuck.com" class="email-link">hello@jakebuck.com</a>
+<a href="mailto:hello@jakebuck.co.uk" class="email-link">hello@jakebuck.co.uk</a>
 
 You can also find me on [LinkedIn](https://linkedin.com/in/jakebuck) — though I'll be honest, I check it about as often as I check my horoscope.
 

@@ -1,11 +1,11 @@
-baseURL = "https://jakebuck.com"
+baseURL = "https://jakebuck.co.uk"
 languageCode = "en-gb"
 title = "Jake Buck"
 
 [params]
   description = "I work on the problem of turning fragmented care data into decisions that actually help people."
   author = "Jake Buck"
-  email = "hello@jakebuck.com"
+  email = "hello@jakebuck.co.uk"
 
 [markup.goldmark.renderer]
   unsafe = true
